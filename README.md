@@ -57,7 +57,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/yourusername/your-repo/CON
 
 ## Authors
 
-- **Your Name** - *Initial work* - [YourUsername](https://github.com/yourusername)
+- **Your Name** - _Initial work_ - [YourUsername](https://github.com/yourusername)
 
 See also the list of [contributors](https://github.com/yourusername/my-typescript-project/contributors) who participated in this project.
 

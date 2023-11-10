@@ -1,5 +1,5 @@
-function helloWorld(): string {
-    return 'Hello, world!';
+export function helloWorld(): string {
+  return 'Hello, world!';
 }
 
 console.log(helloWorld());
