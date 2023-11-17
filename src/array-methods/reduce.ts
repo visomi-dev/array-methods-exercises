@@ -17,13 +17,18 @@
 // - Output Esperado: **`10`**
 
 export function firstExercise(input: number[]): number {
-  return 0;
+  return input.reduce(function (a, b) {
+    return a + b;
+  });
 }
 
 export function secondExercise(input: string[]): string {
-  return '';
+  const espacio = ' ';
+  return input.reduce((acc, word) => acc + espacio + word);
 }
 
 export function thirdExercise(input: Array<{ cantidad: number }>): number {
-  return 0;
+  const canti = input.map((number) => number.cantidad);
+
+  return canti.reduce((acc, value) => acc + value);
 }
