@@ -17,15 +17,15 @@
 // - Output Esperado: **`[{ edad: 20 }, { edad: 25 }, { edad: 30 }]`**
 
 export function firstExercise(input: number[]): number[] {
-  return [];
+  return input.sort((a, b) => a - b);
 }
 
 export function secondExercise(input: string[]): string[] {
-  return [];
+  return input.sort();
 }
 
 export function thirdExercise(
   input: Array<{ edad: number }>,
 ): Array<{ edad: number }> {
-  return [];
+  return input.sort((a, b) => a.edad - b.edad);
 }

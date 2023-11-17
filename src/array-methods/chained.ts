@@ -63,13 +63,29 @@
 export function firstExercise(
   input: Array<{ nombre: string; precio: number; categoria: string }>,
 ): string[] {
-  return [];
+  return input
+    .filter(
+      (product) => product.categoria === 'Electrónica' && product.precio > 250,
+    )
+    .map((product) => product.nombre);
 }
 
-export function secondExercise(input: number[]): number {
-  return 0;
+export function secondExercise(input: number[]): number | undefined {
+  const media = input.reduce((acc, el) => acc + el, 0) / input.length;
+  console.log(media);
+  return input
+    .sort(function (a, b) {
+      return a - b;
+    })
+    .find((element) => element > media);
 }
 
 export function thirdExercise(input: string[]): string | boolean {
-  return false;
+  const condi = input.every((word) => word.length >= 5);
+
+  if (condi) {
+    return input.join('-');
+  } else {
+    return condi;
+  }
 }
